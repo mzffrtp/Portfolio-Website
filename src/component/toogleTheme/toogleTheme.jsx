@@ -10,12 +10,12 @@ export default function ToogleTheme() {
   return (
     <div
       className={`${themeState.darkMode ? "bg-primary-light" : "bg-primary-dark"} 
-      flex items-center justify-between text-white px-6 py-4 h-12 max-w-5xl mx-auto mt-12`}>
+      flex items-center justify-between text-white px-6 py-4 h-20 mx-auto`}>
       <span></span>
       <button
         onClick={() => dispatch(toogleTheme())}
-        className="px-6 py-2 text-white bg-pink-600 rounded-md font-semibold uppercase">
-        {themeState.darkMode ? "Light" : "Dark"}
+        className="my-5 px-6 py-2 text-white bg-pink-600 rounded-md font-semibold uppercase">
+        {themeState.darkMode ? "Dark" : "Light"}
       </button>
     </div>
   )
