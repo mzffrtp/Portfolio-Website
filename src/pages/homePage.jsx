@@ -10,12 +10,12 @@ export default function HomePage() {
     return (
         <div className={`${isDarkMode ? "bg-primary-light" : "bg-primary-dark text-white"} min-h-screen relative z-10 px-3 overflow-hidden`}>
             <div>
-                <section className="h-full max-w-5xl mx-auto pt-16 md:pt-8">
+                <section className="h-full max-w-5xl mx-auto pt-12 md:pt-2">
                     <div className="flex flex-col items-center justify-content-center md:items-start">
                         <h4 className="text-lg text-gray-400">
                             <span className="text-xl font-normal">Hello,</span>I´m</h4>
-                        <h1 className="mt-5 text-xl font-extrabold tracking-normal uppercase md:text-4xl md:mt-3">Muzaffer Topgul</h1>
-                        <div className="mt-5 text-2xl text-transparent  bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
+                        <h1 className="mt-1 text-xl font-extrabold tracking-normal uppercase md:text-4xl md:mt-3">Muzaffer Topgul</h1>
+                        <div className="mt-1 text-2xl text-transparent  bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
                             <Typed
                                 strings={[
                                     "Front-end Developer",
@@ -42,13 +42,13 @@ export default function HomePage() {
                                     src="https://img.icons8.com/arcade/64/null/github.png" /></a>
                         </div>
                     </div>
-                    <article className="mt-3 md:mt-4">
+                    <article className="mt-3 prose prose-slate md:mt-4 md:prose-lg sm:prose-base">
                         <div>
                             <pre>
-                                <code className="languge-js">
+                                <code className="languge-ts">
                                     <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
                                         <span>
-                                            // Portfolio.js
+                                            // Portfolio.ts
                                         </span>
                                     </div>
                                     <p>
@@ -58,28 +58,33 @@ export default function HomePage() {
                                         <span className="text-gray-500">//</span>{" "}
                                         <span>You will realy get in love with it! 💚 🎠</span>
                                     </p>
-                                    <div className="flex items-center space-x-4 my-3">
-                                        <span className="text-4xl">🤹</span>
-
-                                        <div className="">
+                                    <div className="flex items-center space-x-1 my-3">
+                                        <span className="text-7xl">🤹</span>
+                                        <div>
                                             <p className="text-sm">
-                                                <span className="text-pink-300"> {">"} </span> const
-                                                tech = ["Reactjs", "Redux", "Redux Tool Kit", "Redux Thunk"];{" "}
+                                                <span className="text-blue-300">const </span>
+                                                react_frontend_developer:
+                                                <span className=" text-green-500"> Developer</span> = <span className="text-yellow-300">{"{"}</span>
                                             </p>
-                                            <p className="text-sm">
-                                                <span className="text-pink-300"> {">"} </span> const
-                                                design = ["Bootstrap", "SASS", "Tailwind"];{" "}
+                                            <p className="text-sm ms-5">
+                                                tech :<span className="text-pink-300"> {"["}</span>"Html5", "JS", "React", "Redux"<span className="text-pink-300">{"]"}</span>,
                                             </p>
-                                            <p className="text-sm">
-                                                <span className="text-pink-300"> {">"} </span> const
-                                                loading = ["Type Script"];{" "}
+                                            <p className="text-sm ms-5">
+                                                design :<span className="text-pink-300"> {"["}</span>"SASS", "Bootstrap", "Tailwind"<span className="text-pink-300">{"]"}</span>,
+                                            </p>
+                                            <p className="text-sm ms-5">
+                                                loading :<span className="text-pink-300"> {"["}</span>"TypeScript"<span className="text-pink-300">{"]"}</span>,
+                                            </p>
+                                            <p className="text-sm ">
+                                                <span className="text-yellow-300">{"};"}</span>
                                             </p>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-8">
                                         <Link
-                                        to={""}
-                                        >projects</Link>
+                                            className="text-pink-500 text-base font-black tracking-widest no-underline uppercase hover:text-cyan-500"
+                                            to={"/projects"}
+                                        >Projects</Link>
                                     </div>
                                 </code>
                             </pre>

@@ -5,7 +5,6 @@ import { toogleTheme } from "../../redux/actions/themeAction";
 export default function ToogleTheme() {
   const { themeState } = useSelector((state) => state);
   const dispatch = useDispatch();
-  console.log('current theme state:', themeState.darkMode);
 
   return (
     <div
