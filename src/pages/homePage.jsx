@@ -84,7 +84,7 @@ export default function HomePage() {
                                         <Link
                                             className="text-pink-500 text-base font-black tracking-widest no-underline uppercase hover:text-cyan-500"
                                             to={"/projects"}
-                                        >Projects</Link>
+                                        >Projects<span className="ms-3 text-xl">👀</span></Link>
                                     </div>
                                 </code>
                             </pre>
