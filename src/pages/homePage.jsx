@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Typed from "react-typed";
 import { Link, } from "react-router-dom";
