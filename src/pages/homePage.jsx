@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import Typed from "react-typed";
 import { Link, } from "react-router-dom";
 
+
 export default function HomePage() {
     const isDarkMode = useSelector(state => state.themeState.darkMode)
 
