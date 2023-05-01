@@ -34,13 +34,23 @@ export default function HomePage() {
                                 href="https://www.linkedin.com/in/mzffrtp/">
                                 <img
                                     className="fill-current transform scale-105 hover:scale-125"
-                                    src="https://img.icons8.com/arcade/64/null/linkedin.png" /></a>
+                                    src="https://img.icons8.com/arcade/64/null/linkedin.png"
+                                    alt="linkedin" /></a>
                             <a
                                 href="https://github.com/mzffrtp?tab=repositories"
                                 target={"_blank"}>
                                 <img
                                     className="fill-current transform scale-105 hover:scale-125"
-                                    src="https://img.icons8.com/arcade/64/null/github.png" /></a>
+                                    src="https://img.icons8.com/arcade/64/null/github.png"
+                                    alt="github" /></a>
+                            <Link
+                                to={"mailto:someone@yoursite.com"}
+                                target={"_blank"}>
+                                <img
+                                    className="fill-current transform scale-105 hover:scale-125"
+                                    src="https://img.icons8.com/arcade/64/null/new-post--v2.png"
+                                    alt="mail" />
+                            </Link>
                         </div>
                     </div>
                     <article className="mt-3 prose prose-slate md:mt-4 md:prose-lg sm:prose-base">
@@ -81,11 +91,13 @@ export default function HomePage() {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="flex items-center space-x-8">
+                                    <div className="flex justify-center space-x-8">
                                         <Link
                                             className="text-pink-500 text-base font-black tracking-widest no-underline uppercase hover:text-cyan-500"
-                                            to={"/projects"}
-                                        >Projects<span className="ms-3 text-xl">👀</span></Link>
+                                            to={"/projects"}>
+                                            <span className="me-3 text-xl">👀</span>
+                                            <span className="text-2xl">Projects</span>
+                                            <span className="ms-3 text-xl">👀</span></Link>
                                     </div>
                                 </code>
                             </pre>

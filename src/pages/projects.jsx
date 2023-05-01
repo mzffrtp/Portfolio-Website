@@ -25,7 +25,12 @@ export default function Projects() {
                         ⬅️ <span className="ms-3">Back to Home</span>
                     </div>
                 </Link>
-                <p className="text-center m-5 mt-1">Enjoy some of my projects here. To see more please visit my <Link className="text-red-500 text-xl font-black hover:text-lime-500"> GITHUB 👁</Link></p>
+                <h1 className="text-4xl text-center py-1 hover:decoration-orange-500 tracking-wide hover:text-red-500">Featured Projects</h1>
+                <p className="text-center m-5 mt-1">Enjoy some of my projects. 👁 more at my 
+                <Link
+                to={"https://github.com/mzffrtp?tab=repositories"}
+                target={"_blank"}
+                className="text-red-500 text-xl font-black hover:text-lime-500 ms-1"> GITHUB </Link></p>
                 <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 m-6">
                     {
                         projects.map((project, id)=>(
