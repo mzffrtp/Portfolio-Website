@@ -25,11 +25,11 @@ export default function ProjectCard({
               {title}
             </h2>
             <p className="text-md text-lime-400 h-20 text-justify">{description}</p>
-            <div className="flex flex-wrap justify-center max-h-24 ">
+            <div className="flex flex-wrap justify-center max-h-24">
               {tags.map((tag, key) => (
                 <span
                   key={key}
-                  className="inline-flex items-center justify-center text-xs font-bold leading-none text-pink-100 bg-pink-700 rounded h-8 me-3 my-1 p-1 w-30 sm:me-2 sm:font-medium"
+                  className="inline-flex items-center justify-center text-xs font-bold leading-none text-pink-100 bg-pink-700 rounded h-8 me-3 my-1 p-1 w-30 sm:hidden md:block"
                 >
                   {tag}
                 </span>
